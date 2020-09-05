@@ -98,22 +98,22 @@ affinity: {}
 
 env:
   ##  REQUIRED: Set mongodb password
-  MONGODB_PASSWORD: ""
+  MONGODB_PASSWORD: "password"
   ##  REQUIRED: Set mongodb username
-  MONGODB_USERNAME: ""
+  MONGODB_USERNAME: "user"
   ##  REQUIRED: Set mongodb database name
-  MONGODB_DB_NAME: ""
+  MONGODB_DB_NAME: "db"
   ##  Set mongodb auth db, defaults to admin
-  MONGODB_AUTH_DB: ""
+  MONGODB_AUTH_DB: "admin"
   ##  Set mongodb hostname, defaults to localhost
   MONGODB_HOST: localhost
   ##  Set mongodb connection port, defaults to 27017
-  MONGODB_PORT: 27017
+  MONGODB_PORT: "27017"
   ##  REQUIRED: Set path to store application data
   DATA_DIR: /data
   ##  REQUIRED: Ingress URL
-  APPLICATION_URL: ""
+  APPLICATION_URL: "http://example.com/"
   ##  REQUIRED: Github Client ID, for user auth
-  GITHUB_LOGIN_CLIENT_ID: ""
+  GITHUB_LOGIN_CLIENT_ID: "cleint-id"
   ##  REQUIRED: Github Secret ID, for user auth
-  GITHUB_LOGIN_CLIENT_SECRET: ""
+  GITHUB_LOGIN_CLIENT_SECRET: "client-secret"
