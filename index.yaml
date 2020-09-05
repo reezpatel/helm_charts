@@ -3,7 +3,7 @@ entries:
   devpunk:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-05T20:53:11.0435645+05:30"
+    created: "2020-09-06T01:26:55.4498268+05:30"
     description: Devpunk Server - Daily source of Tech News
     digest: 2403af35821a5e7fe9e3b6a8a7eb1f0c110dd25765a330e44931dfe543988acb
     keywords:
@@ -21,11 +21,11 @@ entries:
     - https://github.com/reezpatel/helm_charts
     type: application
     urls:
-    - https://reezpatel.github.io/helm-charts/devpunk-0.1.1.tgz
+    - https://reezpatel.github.io/helm_charts/devpunk-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-05T20:53:11.0426527+05:30"
+    created: "2020-09-06T01:26:55.443879+05:30"
     description: Devpunk Server - Daily source of Tech News
     digest: dc68997ad1191d3420622ad9e5474d9ab70c28bba0d73ae288bd4cb4a2c7fdc6
     keywords:
@@ -43,6 +43,6 @@ entries:
     - https://github.com/reezpatel/helm
     type: application
     urls:
-    - https://reezpatel.github.io/helm-charts/devpunk-0.1.0.tgz
+    - https://reezpatel.github.io/helm_charts/devpunk-0.1.0.tgz
     version: 0.1.0
-generated: "2020-09-05T20:53:11.0415068+05:30"
+generated: "2020-09-06T01:26:55.4339253+05:30"
