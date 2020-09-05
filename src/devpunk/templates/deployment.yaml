@@ -1,3 +1,4 @@
+{{- $secretName := include "devpunk.fullname" . -}}
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -33,10 +34,10 @@ spec:
           env:
           {{- range $envKey, $envVal := .Values.env }}
             - name: {{ $envKey | upper }}
-                valueFrom:
-                  secretKeyRef:
-                    name: {{ include "devpunk.fullname" . }}
-                    key: {{ $envKey | upper }}
+              valueFrom:
+                secretKeyRef:
+                  name: {{ $secretName }}
+                  key: {{ $envKey | upper }}
           {{- end }}
           ports:
             - name: http

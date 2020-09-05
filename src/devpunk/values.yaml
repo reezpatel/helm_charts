@@ -6,8 +6,9 @@ image:
   tag: "latest"
 
 imagePullSecrets: []
+
 nameOverride: ""
-# fullnameOverride: ""
+fullnameOverride: ""
 
 podAnnotations: {}
 podSecurityContext:
