@@ -1,0 +1,24 @@
+apiVersion: v2
+name: devpunk
+description: Devpunk Server - Daily source of Tech News
+
+type: application
+
+version: 0.1.0
+kubeVersion: "^1.13.0-0"
+appVersion: 1.16.0
+
+# home: https://kube-runner.docs.drone.io/
+# icon: https://drone.io/apple-touch-icon.png
+
+keywords:
+  - rss
+  - feed
+  - news
+  - web
+  - node
+sources:
+  - https://github.com/reezpatel/helm_charts
+maintainers:
+  - name: Reez
+    email: me@reez.dev
