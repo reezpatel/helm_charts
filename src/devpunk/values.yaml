@@ -117,3 +117,7 @@ env:
   GITHUB_LOGIN_CLIENT_ID: "cleint-id"
   ##  REQUIRED: Github Secret ID, for user auth
   GITHUB_LOGIN_CLIENT_SECRET: "client-secret"
+  ##  Set Redis Host, defaults to localhost
+  REDIS_HOST: localhost
+  ##  Set Kube MQ host, defaults to localhost:5000
+  KUBEMQ_HOST: "localhost:5000"
