@@ -1,0 +1,40 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: {{ include "devpunk.fullname" . }}
+  labels:
+    {{- include "devpunk.labels" . | nindent 4 }}
+spec:
+  concurrencyPolicy: {{ .Values.job.concurrencyPolicy }}
+  failedJobsHistoryLimit: {{ .Values.job.failedJobsHistoryLimit }}
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            {{- include "devpunk.labels" . | nindent 12 }}
+        spec:
+          containers:
+          - image: "curlimages/curl:7.69.1"
+            imagePullPolicy: Always
+            name: {{ .Values.job.name }}
+            args:
+              - {{ template "devpunk.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local:{{ .Values.service.portgit  }}/api/v1/ingestion/ingest
+            {{- with .Values.job.resources }}
+            resources:
+{{ toYaml . | indent 14 }}
+            {{- end }}
+          {{- with .Values.job.nodeSelector }}
+          nodeSelector:
+{{ toYaml . | indent 12 }}
+          {{- end }}
+          {{- with .Values.job.affinity }}
+          affinity:
+{{ toYaml . | indent 12 }}
+          {{- end }}
+          {{- with .Values.job.tolerations }}
+          tolerations:
+{{ toYaml . | indent 12 }}
+          {{- end }}
+  schedule: {{ .Values.job.schedule | quote }}
+  successfulJobsHistoryLimit: {{ .Values.job.successfulJobsHistoryLimit }}
