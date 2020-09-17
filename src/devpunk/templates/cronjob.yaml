@@ -19,7 +19,7 @@ spec:
             imagePullPolicy: Always
             name: {{ .Values.job.name }}
             args:
-              - {{ template "devpunk.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local:{{ .Values.service.portgit  }}/api/v1/ingestion/ingest
+              - {{ template "devpunk.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local:{{ .Values.service.port }}/api/v1/ingestion/ingest
             {{- with .Values.job.resources }}
             resources:
 {{ toYaml . | indent 14 }}
@@ -36,5 +36,6 @@ spec:
           tolerations:
 {{ toYaml . | indent 12 }}
           {{- end }}
+          restartPolicy: OnFailure
   schedule: {{ .Values.job.schedule | quote }}
   successfulJobsHistoryLimit: {{ .Values.job.successfulJobsHistoryLimit }}
