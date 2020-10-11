@@ -28,8 +28,8 @@ securityContext:
 #   port: 80
 
 job:
-  name: 'feed-ingestion'
-  schedule: "0 */6 * * *"  
+  name: "feed-ingestion"
+  schedule: "0 */6 * * *"
   env: {}
   concurrencyPolicy: Forbid
   failedJobsHistoryLimit: 3
@@ -131,5 +131,5 @@ env:
   GITHUB_LOGIN_CLIENT_SECRET: "client-secret"
   ##  Set Redis Host, defaults to localhost
   REDIS_HOST: localhost
-  ##  Set Kube MQ host, defaults to localhost:5000
-  KUBEMQ_HOST: "localhost:5000"
+  ##  Set Ingestion key used for cron job
+  INGESTION_KEY: "super-secret-key"
