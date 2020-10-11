@@ -20,7 +20,7 @@ spec:
             imagePullPolicy: Always
             name: {{ .Values.job.name }}
             args:
-              - {{ template "devpunk.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local:{{ .Values.service.port }}/api/v1/ingestion/ingest?$INGESTION_KEY
+              - {{ template "devpunk.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local:{{ .Values.service.port }}/api/v1/ingestion/ingest?token=$(INGESTION_KEY)
             env:
             - name: INGESTION_KEY
               valueFrom:
