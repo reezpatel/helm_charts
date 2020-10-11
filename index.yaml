@@ -3,7 +3,29 @@ entries:
   devpunk:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-17T18:42:37.517649416+02:00"
+    created: "2020-10-11T17:18:29.0895387+05:30"
+    description: Devpunk Server - Daily source of Tech News
+    digest: 508e91d1bd0cb958ba775a84a6021c1e20eab5809ccc0e70e98292d430e17742
+    keywords:
+    - rss
+    - feed
+    - news
+    - web
+    - node
+    kubeVersion: ^1.13.0-0
+    maintainers:
+    - email: me@reez.dev
+      name: Reez
+    name: devpunk
+    sources:
+    - https://github.com/reezpatel/helm_charts
+    type: application
+    urls:
+    - https://reezpatel.github.io/helm_charts/devpunk-0.1.6.tgz
+    version: 0.1.6
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-10-11T17:18:29.0888166+05:30"
     description: Devpunk Server - Daily source of Tech News
     digest: 62d76040c7a53c560492524fda74b89147905f2e158af16f0089f1fe767e9880
     keywords:
@@ -25,7 +47,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-17T18:42:37.516194139+02:00"
+    created: "2020-10-11T17:18:29.087683+05:30"
     description: Devpunk Server - Daily source of Tech News
     digest: 9ebb57922a2a83af3349af80005cb87dbcde8f8c6983d5cc6db302e436387468
     keywords:
@@ -47,7 +69,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-17T18:42:37.514531188+02:00"
+    created: "2020-10-11T17:18:29.0870603+05:30"
     description: Devpunk Server - Daily source of Tech News
     digest: 3c96d9a24057aaffd7e3f71dee1545077f73407471f4635bca464e904562f392
     keywords:
@@ -69,7 +91,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-17T18:42:37.513285583+02:00"
+    created: "2020-10-11T17:18:29.0865389+05:30"
     description: Devpunk Server - Daily source of Tech News
     digest: f1c700d0a31392830d58fc370d4b345f61770b6ae57a4216577652d4efe49699
     keywords:
@@ -91,7 +113,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-17T18:42:37.512109052+02:00"
+    created: "2020-10-11T17:18:29.0860066+05:30"
     description: Devpunk Server - Daily source of Tech News
     digest: 405e2a38b571d9a77fff724e0e31e8a8f61bd910c16edcddb2795c0410f2d151
     keywords:
@@ -113,7 +135,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-17T18:42:37.510832442+02:00"
+    created: "2020-10-11T17:18:29.0854104+05:30"
     description: Devpunk Server - Daily source of Tech News
     digest: dc68997ad1191d3420622ad9e5474d9ab70c28bba0d73ae288bd4cb4a2c7fdc6
     keywords:
@@ -133,4 +155,4 @@ entries:
     urls:
     - https://reezpatel.github.io/helm_charts/devpunk-0.1.0.tgz
     version: 0.1.0
-generated: "2020-09-17T18:42:37.509153558+02:00"
+generated: "2020-10-11T17:18:29.0847139+05:30"

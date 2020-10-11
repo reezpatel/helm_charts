@@ -47,10 +47,12 @@ spec:
             httpGet:
               path: /live
               port: http
+            initialDelaySeconds: 60
           readinessProbe:
             httpGet:
               path: /ready
               port: http
+            initialDelaySeconds: 60
           volumeMounts:
             - name: storage-volume
               mountPath: {{ .Values.persistentVolume.mountPath }}
