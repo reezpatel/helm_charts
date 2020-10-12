@@ -77,9 +77,5 @@ spec:
             claimName: {{ if .Values.persistentVolume.existingClaim }}{{ .Values.persistentVolume.existingClaim }}{{- else }}{{ template "devpunk.fullname" . }}{{- end }}
         {{- else }}
           emptyDir:
-          {{- if .Values.emptyDir.sizeLimit }}
-            sizeLimit: {{ .Values.emptyDir.sizeLimit }}
-          {{- else }}
             {}
-          {{- end -}}
         {{- end -}}

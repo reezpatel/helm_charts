@@ -133,3 +133,11 @@ env:
   REDIS_HOST: localhost
   ##  Set Ingestion key used for cron job
   INGESTION_KEY: "super-secret-key"
+  # S3 Storage Key ID
+  AWS_ACCESS_KEY_ID: ""
+  # S3 Storage Access Key
+  AWS_SECRET_ACCESS_KEY: ""
+  # S3 Bucket Region
+  S3_BUCKET_REGION: ""
+  # S3 Bucket Name (if set persistentVolume is not used)
+  S3_BUCKET_NAME: ""
